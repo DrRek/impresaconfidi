@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Impresa Confidi &mdash; Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700|Oswald:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style type="text/css"> 
+        div.info p { 
+            color: black; 
+            font-size: 1.2em; 
+        }
+        div.custom-column {
+            width: 80%;
+            margin: auto;
+        }
+    </style> 
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <div include-html="templates/loader.html"></div>
+
+    <div class="site-wrap" id="home-section">
+
+        <div include-html="templates/header.html"></div> 
+
+        <section class="site-section bg-light" id="istruttoria">
+            <div class="container">
+
+                <div class="row " id="istruttoria-inside">
+                    <div class="col-12 text-center" data-aos="fade">
+                        <h2 class="section-title text-primary">Documenti per l'istruttoria</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="custom-column" data-aos="fade-up" data-aos-delay="100" id="istruttoria-div"></div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="site-section bg-light" id="acesso-credito">
+            <div class="container">
+
+                <div class="row" id="acesso-credito-inside">
+                    <div class="col-12 text-center" data-aos="fade">
+                        <h2 class="section-title text-primary">Moduli per l'accesso al credito</h2>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="custom-column" data-aos="fade-up" data-aos-delay="100" id="accesso-credito-div"></div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="site-section bg-light" id="trasparenza">
+            <div class="container">
+
+                <div class="row " id="trasparenza-inside">
+                    <div class="col-12 text-center" data-aos="fade">
+                        <h2 class="section-title text-primary">Trasparenza</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="custom-column" data-aos="fade-up" data-aos-delay="100" id="trasparenza-div"></div>
+                </div>
+            </div>
+        </section>
+
+        <div include-html="templates/footer.html"></div> 
+
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+    <!-- main.js contiene codice custom di luca per permettere il caricamento di templates -->
+    <script src="js/main.js"></script>
+
+    <script>
+        jQuery(document).ready(async function ($) {
+            var data = {
+                sections: [
+                {
+                    name: "Documenti per l'istruttoria",
+                    basePath: "docs/istruttoria/",
+                    divId: "istruttoria-div",
+                    docs: [
+                        {
+                            name: "Elenco documenti ditta individuale",
+                            fileName: "elenco_documenti_ditta_individuale.pdf"
+                        },
+                        {
+                            name: "Elenco documenti nuove imprese (Start up)",
+                            fileName: "elenco_documenti_nuove_imprese_(start_up).pdf"
+                        },
+                        {
+                            name: "Elenco documenti società",
+                            fileName: "elenco_documenti_societa.pdf"
+                        },
+                    ]
+                },
+                {
+                    name: "Moduli per l'accesso al credito",
+                    basePath: "docs/accesso_credito/",
+                    divId: "accesso-credito-div",
+                    docs: [
+                        {
+                            name: "Autocertificazione leasing",
+                            fileName: "autocertificazione_leasing.pdf"
+                        },
+                        {
+                            name: "Autocertificazione rapporti bancari a breve termine",
+                            fileName: "autocertificazione_rapporti_bancari_breve_termine.pdf"
+                        },
+                        {
+                            name: "Autocertificazione rapporti bancari a medio e lungo termine",
+                            fileName: "autocertificazione_rapporti_bancari_medio_lungo_termine.pdf"
+                        },
+                        {
+                            name: "Autocertificazione di regolarità posizione tributaria e previdenziale",
+                            fileName: "autocertificazione_regolarita_posizione_tributaria_e_previdenziale.pdf"
+                        },
+                        {
+                            name: "Business Plan",
+                            fileName: "business_plan.pdf"
+                        },
+                        {
+                            name: "Contratto di Garanzia",
+                            fileName: "contratto_di_garanzia.pdf"
+                        },
+                        {
+                            name: "Descrizione beni immobili del garante della società",
+                            fileName: "descrizione_beni_immobili_garante_società.pdf"
+                        },
+                        {
+                            name: "Dichiarazione antiriciclagio",
+                            fileName: "dichiarazione_antiriciclagio.pdf"
+                        },
+                        {
+                            name: "Dichiarazione de-minimis",
+                            fileName: "dichiarazione_de-minimis.pdf"
+                        },
+                        {
+                            name: "Dichiarazione sostitutiva atto notorio assenza dipendenti",
+                            fileName: "dichiarazione_sostitutiva_atto_notorio_assenza_dipendenti.pdf"
+                        },
+                        {
+                            name: "Dichiarazione sostitutiva di certificazioni anagrafiche",
+                            fileName: "dichiarazione_sostitutiva_di_certificazioni_anagrafiche.pdf"
+                        },
+                        {
+                            name: "MCC Allegato 4 Controgaranzia-D.O._181211",
+                            fileName: "MCC_Allegato_4_Controgaranzia-D.O._181211.pdf"
+                        },
+                        {
+                            name: "Modulo codice univoco e PEC",
+                            fileName: "modulo_codice_univoco_e_PEC.pdf"
+                        },
+                        {
+                            name: "Modulo richiesta accesso dati CR",
+                            fileName: "modulo_richiesta_accesso_dati_CR.pdf"
+                        },
+                        {
+                            name: "Privacy GDPR e CRIF",
+                            fileName: "privacy_GDPR_e_CRIF.pdf"
+                        }
+                    ]
+                },
+                {
+                    name: "Trasparenza",
+                    basePath: "docs/trasparenza/",
+                    divId: "trasparenza-div",
+                    docs: [
+                        {
+                            name: "Documento di sintesi ImpresaConfidi",
+                            fileName: "documento_di_sintesi_impresaconfidi.pdf"
+                        },
+                        {
+                            name: "Foglio informativo garanzia collettiva dei fidi",
+                            fileName: "foglio_informativo_garanzia_collettiva_dei_fidi.pdf"
+                        },
+                        {
+                            name: "Principali definizioni 2017",
+                            fileName: "principali_definizioni_2017.pdf"
+                        },
+                    ]
+                },
+                ]
+            }
+            data.sections.map(function(section) {
+                if(!section.divId) return
+
+                var list = `<ul class="list-group">`
+                list += section.docs.reduce(function(acc, curr){return acc+`
+                        <li class="list-group-item">
+                            <a href="${section.basePath}${curr.fileName}" style="color: gray" target='_blank'>
+                                <i class="icon-file" aria-hidden="true"></i>   
+                                ${curr.name}
+                            </a>
+                        </li>
+                    `}, "")
+                list += "</ul>"
+
+                $(`#${section.divId}`).append(list)
+            })
+        })
+    </script>
+
+</body>
+
+</html>
