@@ -320,6 +320,14 @@ function includeHTML() {
   }
 }
 
+function navigateToId() {
+  var splitted = location.href.split("#");
+  var id = splitted[splitted.length - 1];
+  if (id && splitted.length > 1 && location.href.endsWith(id)) {
+    location.href = `#${id}`;
+  }
+}
+
 jQuery(document).ready(async function ($) {
   includeHTML();
   initDocument($);
